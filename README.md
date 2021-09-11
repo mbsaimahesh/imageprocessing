@@ -1,3 +1,5 @@
 # imageprocessing
 Image processing functions 
-* mathematical operations 
+* mathematical operations.
+* opencv library usage.
+ 
