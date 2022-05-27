@@ -1,12 +1,23 @@
-#include<iostream>
-#include"opencv4/opencv2/opencv.hpp"
-
-using namespace std;
-
+#include "histogram_test.h"
+#include "image.h"
+template<typename T> 
+Image<T>& set_val(Image<T>& img,T val)
+{
+    for(int i=0; i<img.height();i++)
+    {
+        for(int j=0;j<img.width();j++)
+        {
+            img.set(i,j,val);
+        }
+    }
+    return img; 
+}
 int main()
 {
-    string s;
-    cv::Mat in_image=cv::imread("/home/sravya/Code/standard_test_images/lake.tif",cv::IMREAD_GRAYSCALE);
-    cv::imshow("Lake",in_image);
-    cv::waitKey(0);
+    histogram_test();
+    Image<unsigned char> image(4,4);
+   
+    
+
+
 }

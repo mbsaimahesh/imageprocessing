@@ -1,0 +1,68 @@
+\hypertarget{classHistogramEqualization}{}\doxysection{Histogram\+Equalization Class Reference}
+\label{classHistogramEqualization}\index{HistogramEqualization@{HistogramEqualization}}
+
+
+Performs histogram equalization on the image. compute the histogram of the images.~\newline
+ To\+Do\+: Implement for any number of bins.~\newline
+compute the probabilities. calculate the Commulated Distribution Function. Map the values of the each pixel as C\+D\+F(x)  
+
+
+
+
+{\ttfamily \#include $<$histogram\+\_\+eq.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHistogramEqualization_af7723d174a6203778b4a054e496f715a}\label{classHistogramEqualization_af7723d174a6203778b4a054e496f715a}} 
+{\bfseries Histogram\+Equalization} (int nbins)
+\item 
+void \mbox{\hyperlink{classHistogramEqualization_ae887eb2d2ee726f155b4ed9ad23868ee}{compute\+\_\+histogram}} (unsigned char $\ast$img, const int nrows, const int ncols)
+\begin{DoxyCompactList}\small\item\em compute the histogram. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHistogramEqualization_af1b4576e8c7b96074f72fc5bcf430aa6}{equalize}} ()
+\begin{DoxyCompactList}\small\item\em equalize the image histogram using the already computed histogram. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Performs histogram equalization on the image. compute the histogram of the images.~\newline
+ To\+Do\+: Implement for any number of bins.~\newline
+compute the probabilities. calculate the Commulated Distribution Function. Map the values of the each pixel as C\+D\+F(x) 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHistogramEqualization_ae887eb2d2ee726f155b4ed9ad23868ee}\label{classHistogramEqualization_ae887eb2d2ee726f155b4ed9ad23868ee}} 
+\index{HistogramEqualization@{HistogramEqualization}!compute\_histogram@{compute\_histogram}}
+\index{compute\_histogram@{compute\_histogram}!HistogramEqualization@{HistogramEqualization}}
+\doxysubsubsection{\texorpdfstring{compute\_histogram()}{compute\_histogram()}}
+{\footnotesize\ttfamily void Histogram\+Equalization\+::compute\+\_\+histogram (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{img,  }\item[{const int}]{nrows,  }\item[{const int}]{ncols }\end{DoxyParamCaption})}
+
+
+
+compute the histogram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & only grayscale images. \\
+\hline
+{\em nrows} & \\
+\hline
+{\em ncols} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHistogramEqualization_af1b4576e8c7b96074f72fc5bcf430aa6}\label{classHistogramEqualization_af1b4576e8c7b96074f72fc5bcf430aa6}} 
+\index{HistogramEqualization@{HistogramEqualization}!equalize@{equalize}}
+\index{equalize@{equalize}!HistogramEqualization@{HistogramEqualization}}
+\doxysubsubsection{\texorpdfstring{equalize()}{equalize()}}
+{\footnotesize\ttfamily void Histogram\+Equalization\+::equalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+equalize the image histogram using the already computed histogram. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/histogram\+\_\+eq.\+h\item 
+src/histogram\+\_\+eq.\+cpp\end{DoxyCompactItemize}
