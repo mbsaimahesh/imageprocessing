@@ -1,9 +1,16 @@
 #include "histogram_test.h"
 using namespace std;
 
-void histogram_test()
+int histogram_test()
 {
-    cv::Mat in_image=cv::imread("/home/sravya/Code/standard_test_images/lake.tif",cv::IMREAD_GRAYSCALE);
+
+
+    cv::Mat in_image=cv::imread("/home/sravya/Code/Data/standard_test_images/lake.tif",cv::IMREAD_GRAYSCALE);
+    if(in_image.empty())
+    {
+        return -1;
+    }
+
     //HistogramEqualization heq{256};
     //heq.compute_histogram(in_image.ptr<uchar>(),in_image.rows,in_image.cols);
     int filter[9] = {0,-1,0,-1,4,-1,0,-1,0};
@@ -15,11 +22,7 @@ void histogram_test()
     out_img.ptr<uchar>());
     auto duration =std::chrono::high_resolution_clock::now()-start;
     std::cout<<"time:"<<std::chrono::duration_cast<std::chrono::milliseconds>(duration).count()<<"ms"<<std::endl;
-
-
-
-    
-
     cv::imshow("Lake",out_img);
     cv::waitKey(0);
+    return 0;
 }
