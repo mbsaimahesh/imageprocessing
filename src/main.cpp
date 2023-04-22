@@ -1,5 +1,6 @@
 #include "histogram_test.h"
 #include "image.h"
+using namespace std;
 template<typename T> 
 Image<T>& set_val(Image<T>& img,T val)
 {
@@ -14,8 +15,8 @@ Image<T>& set_val(Image<T>& img,T val)
 }
 int main()
 {
-    histogram_test();
-    Image<unsigned char> image(4,4);
+    int error =histogram_test();
+    cout<<"Histogram test returned :"<<error<<endl;
    
     
 

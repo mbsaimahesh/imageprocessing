@@ -20,7 +20,7 @@ public:
     PixelType at(int i, int j);
     void set(int i, int j, PixelType pixel);
     const int width() const { return m_width;}
-    const int height() const (return m_height;}
+    const int height() const {return m_height;}
     ~Image();
 };
 
