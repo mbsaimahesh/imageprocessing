@@ -1,17 +1,13 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "CMake",
+            "compileCommands": "${config:cmake.buildDirectory}/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools",
             "includePath": [
-                "${workspaceFolder}/**",
+                "${default}",
                 "/usr/local/include/opencv4"
-            ],
-            "defines": [],
-            "compilerPath": "/usr/bin/clang-10",
-            "cStandard": "c11",
-            "cppStandard": "c++14",
-            "intelliSenseMode": "linux-clang-x64",
-            "configurationProvider": "ms-vscode.cmake-tools"
+            ]
         }
     ],
     "version": 4

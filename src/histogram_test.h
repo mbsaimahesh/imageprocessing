@@ -6,5 +6,6 @@
 #include"histogram_eq.h"
 #include "convolution.h"
 #include<chrono>
+
 int histogram_test();
 #endif
