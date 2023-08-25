@@ -19,22 +19,17 @@ Image<T>& set_val(Image<T>& img,T val)
 
 int main()
 {
-    //int error =histogram_test();
-    //cout<<"Histogram test returned :"<<error<<endl;
+    // int error =histogram_test();
+    // cout<<"Histogram test returned :"<<error<<endl;
 
-    cv::Mat in_image=cv::imread("/home/sravya/Code/Data/standard_test_images/lena_gray_512.tif",cv::IMREAD_GRAYSCALE);
-    std::vector<cv::Mat> pyramids = compute_gauss_pyramid(in_image,3);
+    cv::Mat in_image = cv::imread("/home/sravya/Code/Data/standard_test_images/lena_gray_512.tif", cv::IMREAD_GRAYSCALE);
+    std::vector<cv::Mat> pyramids = compute_gauss_pyramid(in_image, 3);
 
-    int level =0;
-    for(auto img:pyramids)
+    int level = 0;
+    for (auto img : pyramids)
     {
-        string window{"img_"+to_string(level)};
-        cv::imshow(window,img);
+        string window{"img_" + to_string(level)};
+        cv::imshow(window, img);
         cv::waitKey(0);
-
     }
-   
-    
-
-
 }
