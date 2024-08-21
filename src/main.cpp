@@ -22,7 +22,7 @@ int main()
     // int error =histogram_test();
     // cout<<"Histogram test returned :"<<error<<endl;
 
-    cv::Mat in_image = cv::imread("/home/sravya/Code/Data/standard_test_images/lena_gray_512.tif", cv::IMREAD_GRAYSCALE);
+    cv::Mat in_image = cv::imread("/home/sravya/Documents/Code/Data/cameraman.tif");
     std::vector<cv::Mat> pyramids = compute_gauss_pyramid(in_image, 3);
 
     int level = 0;

@@ -4,7 +4,7 @@
 
 Performs histogram equalization on the image. compute the histogram of the images.~\newline
  To\+Do\+: Implement for any number of bins.~\newline
-compute the probabilities. calculate the Commulated Distribution Function. Map the values of the each pixel as C\+D\+F(x)  
+compute the probabilities. calculate the Commulated Distribution Function. Map the values of the each pixel as CDF(x)  
 
 
 
@@ -19,6 +19,7 @@ compute the probabilities. calculate the Commulated Distribution Function. Map t
 \item 
 void \mbox{\hyperlink{classHistogramEqualization_ae887eb2d2ee726f155b4ed9ad23868ee}{compute\+\_\+histogram}} (unsigned char $\ast$img, const int nrows, const int ncols)
 \begin{DoxyCompactList}\small\item\em compute the histogram. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHistogramEqualization_af1b4576e8c7b96074f72fc5bcf430aa6}\label{classHistogramEqualization_af1b4576e8c7b96074f72fc5bcf430aa6}} 
 void \mbox{\hyperlink{classHistogramEqualization_af1b4576e8c7b96074f72fc5bcf430aa6}{equalize}} ()
 \begin{DoxyCompactList}\small\item\em equalize the image histogram using the already computed histogram. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -26,9 +27,7 @@ void \mbox{\hyperlink{classHistogramEqualization_af1b4576e8c7b96074f72fc5bcf430a
 \doxysubsection{Detailed Description}
 Performs histogram equalization on the image. compute the histogram of the images.~\newline
  To\+Do\+: Implement for any number of bins.~\newline
-compute the probabilities. calculate the Commulated Distribution Function. Map the values of the each pixel as C\+D\+F(x) 
-
-
+compute the probabilities. calculate the Commulated Distribution Function. Map the values of the each pixel as CDF(x) 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classHistogramEqualization_ae887eb2d2ee726f155b4ed9ad23868ee}\label{classHistogramEqualization_ae887eb2d2ee726f155b4ed9ad23868ee}} 
@@ -50,16 +49,6 @@ compute the histogram.
 {\em ncols} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classHistogramEqualization_af1b4576e8c7b96074f72fc5bcf430aa6}\label{classHistogramEqualization_af1b4576e8c7b96074f72fc5bcf430aa6}} 
-\index{HistogramEqualization@{HistogramEqualization}!equalize@{equalize}}
-\index{equalize@{equalize}!HistogramEqualization@{HistogramEqualization}}
-\doxysubsubsection{\texorpdfstring{equalize()}{equalize()}}
-{\footnotesize\ttfamily void Histogram\+Equalization\+::equalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-equalize the image histogram using the already computed histogram. 
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
